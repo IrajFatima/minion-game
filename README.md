@@ -1,0 +1,7 @@
+This C++ code implements a simulation of minion interactions within a 20x20 grid environment. The program is structured around a `Minion` class, representing individual minions with attributes such as speed, power, color, and position (x, y) on the grid. Minions are initialized randomly, ensuring unique positions without overlap.
+
+The `main` function orchestrates the simulation, initiating an infinite loop to drive minion movement and interactions. Within each iteration, minions move randomly within the grid, with their direction randomly determined. If a minion encounters another during movement, a competition arises based on their respective powers. This competition is managed by the `compete` function, which adjusts minion attributes accordingly. Depending on the outcome (e.g., one minion defeating the other or both being removed), the grid is updated accordingly.
+
+The program utilizes a 2D array `track_grid` to efficiently track minion positions and interactions. Minions are visually represented on the grid using characters, with different colors indicating their attributes. A delay mechanism is included to visualize movement and interactions effectively.
+
+Overall, this simulation provides an illustrative example of how attributes influence minion behavior and outcomes in a controlled environment. It offers insights into dynamics such as competition and movement, showcasing the complexity of interactions within a simulated world.
